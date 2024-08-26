@@ -94,9 +94,14 @@ class _NumericKeypadState extends State<NumericKeypad> {
             ),
             itemCount: keys.length,
             itemBuilder: (context, index) {
+              bool isLastRowSpecialButton =
+                  index == keys.length - 2 || index == keys.length - 1;
+
               return ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue[200],
+                  backgroundColor: isLastRowSpecialButton
+                      ? Colors.red[300]
+                      : Colors.blue[200],
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8.0),
