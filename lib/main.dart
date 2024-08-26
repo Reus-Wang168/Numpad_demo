@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          systemOverlayStyle: SystemUiOverlayStyle.light, // 状态栏文字颜色
+          systemOverlayStyle: SystemUiOverlayStyle.light, 
         ),
         backgroundColor: Colors.white,
         body: const SafeArea(
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        resizeToAvoidBottomInset: true, // 允许布局根据键盘弹出调整
+        resizeToAvoidBottomInset: true, 
       ),
     );
   }
@@ -80,7 +80,7 @@ class _NumericKeypadState extends State<NumericKeypad> {
             ),
           ),
         ),
-        const SizedBox(height: 25), // 输入框与键盘之间的间距
+        const SizedBox(height: 25), 
         Container(
           padding: const EdgeInsets.all(15),
           color: Colors.grey[200],
@@ -108,7 +108,7 @@ class _NumericKeypadState extends State<NumericKeypad> {
                   ),
                 ),
                 onPressed: () {
-                  // 无需功能实现
+                  
                 },
                 child: Text(
                   keys[index],
